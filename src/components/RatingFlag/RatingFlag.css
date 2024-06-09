@@ -1,0 +1,25 @@
+.rating_flag{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+    background-color: #ffd400;
+}
+
+.rating_flag_star svg{
+    width: 20px;
+    height: 20px;
+}
+
+.rating_flag_text{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 0.8rem;
+}

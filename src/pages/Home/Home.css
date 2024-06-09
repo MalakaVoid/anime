@@ -1,0 +1,20 @@
+.description{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.description__container{
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+}
+
+.description__title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.description__text{
+    margin-top: 16px;
+    line-height: 1.5;
+}

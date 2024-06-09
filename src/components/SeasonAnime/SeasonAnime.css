@@ -1,0 +1,69 @@
+.season_anime{
+    width: 100%;
+    padding: 16px 0;
+    background-color: var(--color-sup-white);
+    box-sizing: border-box;
+    border-bottom: #c2c4c6 1px solid;
+    border-top: #c2c4c6 1px solid;
+}
+
+.season_anime__container{
+    max-width: var(--max-content-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.season_anime__container h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.season_anime__swiper{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.season_anime__swiper .swiper-slide{
+    width: 15%;
+    height: 100%;
+} 
+.season_anime__card{
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+}
+.season_anime__card_img{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.season_anime__card_img .img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 140%;
+
+    background-image: url(http://localhost:3000/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.season_anime__card_title{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-main-red);
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    height: 1.2em; 
+    white-space: nowrap;
+}
+
+.season_anime__card_title:hover{
+    text-decoration: underline 2px;
+}
