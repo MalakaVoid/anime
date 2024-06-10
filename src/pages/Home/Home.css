@@ -18,3 +18,34 @@
     margin-top: 16px;
     line-height: 1.5;
 }
+
+.advantages{
+    width: 100%;
+    padding: 16px 0 50px 0;
+    box-sizing: border-box;
+    border-top: #c2c4c6 1px solid;
+    margin-top: 40px;
+}
+
+.advantages__container{
+    max-width: var(--max-content-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.advantages__title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-text-black);
+    box-sizing: border-box;
+}
+
+.advantages__text,
+.advantages__list{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.advantages__list li{
+    margin-bottom: .5rem;
+}

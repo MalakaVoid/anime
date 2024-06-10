@@ -1,0 +1,31 @@
+
+.anime_info__grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.anime_info__grid_name{
+    padding: 3px 15px;
+    color: #00000060;
+}
+
+.anime_info__grid_value{
+    padding: 3px 15px;
+    color: var(--color-text-black);
+}
+
+.anime_info__grid_genres a{
+    font-size: 1rem;
+    color: var(--color-text-black);
+    text-decoration: underline;
+    transition: .2s;
+}
+.anime_info__grid_genres a:hover{
+    color: var(--color-main-red);
+    text-decoration: none;
+}

@@ -2,7 +2,7 @@ let apiUrl = 'https://shikimori.one/api'
 
 let headers = {
     'User-Agent': 'Api Test',
-    'Authorization': 'Bearer FWWtnCpbvJeNPsgEj9tyuGGufPZ3g-o7iB0QEPsIRFs'
+    'Authorization': 'Bearer 3xfQs55_kiIFsNNtd-ofoe8p5QENhoNcohXJy3g-W0M'
 }
 
 async function getLastUpdatedTitles(){
@@ -46,8 +46,40 @@ async function getTitleById(id){
     return data;
 }
 
+async function getRelatedAnimes(id){
+    const response = await fetch(apiUrl + `/animes/${id}/related`, {
+        method: 'GET',
+        headers: headers,
+    });
+    const data = await response.json();
+    console.log(data)
+    return data;
+}
+
+async function getAnimeScreenshots(id){
+    const response = await fetch(apiUrl + `/animes/${id}/screenshots`, {
+        method: 'GET',
+        headers: headers,
+    });
+    const data = await response.json();
+    return data;
+}
+
+async function getSimmilarAnimes(id){
+    const response = await fetch(apiUrl + `/animes/${id}/similar`, {
+        method: 'GET',
+        headers: headers,
+    });
+    const data = await response.json();
+    console.log(data)
+    return data;
+}
+
 export {
     getLastUpdatedTitles,
     getNewTitles,
     getTitleById,
+    getRelatedAnimes,
+    getAnimeScreenshots,
+    getSimmilarAnimes
 }

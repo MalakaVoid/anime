@@ -50,7 +50,7 @@ function NewAnimes() {
                                 <RatingFlag>{`${anime.score}`}</RatingFlag>
                             </div>
                             <div className="anime_card__content">
-                                <a className="anime_card__title">
+                                <a href={`/title/${anime.id}`} className="anime_card__title" title={anime.russian === ''? anime.name: anime.russian}>
                                     {anime.russian === ''? anime.name: anime.russian}
                                 </a>
                                 <p className='anime_card_original_title'>
